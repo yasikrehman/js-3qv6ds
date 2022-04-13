@@ -1,7 +1,7 @@
 function getIndex(...args) {
   let [sumArray, target] = args;
   const arr = [];
-  let getAr = sumArray.filter((nums, i, self) => {
+  sumArray.filter((nums, i, self) => {
     let final = target - nums;
     if (self.indexOf(final) !== -1) {
       arr.push(self.indexOf(final));
